@@ -1,56 +1,361 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frederick Davis</title>
+    <style>
 
-<style>
-
-body {
-    text-align: center;
-}
-
+        /*PAGE STYLES*/
 
 
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #161616;
+            color: #fff; 
+        }
+        header {
+            background-color: #161616;
+            color: #fff;
+            padding: 5px 0;
+            margin-bottom: -10px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 50px;
+        }    
 
-.linkedin {
-    margin-bottom: 10px;
-    background-color: #272727;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 40px;
-    cursor: pointer;
-    border-radius: 5px;
-} 
+        nav {
+            background-color: #161616;
+            padding: 0px 0;
+            padding-bottom: 15px;
+            text-align: center;
+            font-size: 30px;
+            transition: 0.25s;
+            position: relative;
+        }
+        
 
-        .linkedin:hover {
-            background-color: #494949;
+        nav::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%); 
+            width: 80%; 
+            height: 2px; 
+            background-color: #3a3a3a; 
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            color: #ccc;
+            font-style: bold;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+            background-color: #161616;
+        }
+        ::selection {
+        background-color: #3a3937;
+        color: #ffffff; 
+        }
+
+        body { 
+            overflow-y: scroll;
+        }
+
+        body::-webkit-scrollbar {
+        width: 8px;     
+        }
+
+        body::-webkit-scrollbar-track {
+            background: #161616; 
+        }
+
+        body::-webkit-scrollbar-thumb {
+            background: #272727; 
+            border-radius: 10px;
+        }       
+
+        body::-webkit-scrollbar-thumb:hover {
+            background: #555; 
+        }      
+
+        #home {
+            padding-bottom: 30px;
+        }
+
+        
+
+        /*STYLES SPECIFIC TO THIS PAGE  */
+
+        
+        .description {
+            font-size: 15px;
+            color: #a8a8a8;
+        }
+
+        .content {
+            font-size: 30px;
+            max-width: 60%;
+            text-align: center;
+            display: inline-block;
+            margin-bottom: 30px;
+        }
+
+        .subtitle {
+            font-size: 30px;
+            max-width: 60%;
+            text-align: center;
+            display: inline-block;
+            margin-top: 40px;
+        }
+
+
+        .contentbox {
+            display: block; 
+            margin-top: 60px;
+            justify-content: center;
+            max-width: 1300px;
+            margin-left: 20%;
+            margin-right: 10%;
 
         }
 
-        .linkedin:active {
+        .contentbox-inner {
+            display: flex;
+            align-items: center;
+        }
+
+        .contentbox img {
+            max-width: 50%; 
+            height: auto; 
+            border: 5px solid #ffffff;
+            border-radius: 5px;
+            max-height: 400px;
+        }
+
+        .contentbox .text-container {
+            flex: 1; 
+            margin-left: 20px;
+            margin-right: 20px; 
+        }
+
+        .contentbox .text-container p {
+            
+        }
+
+
+
+
+
+        /*IMAGE CONTAINER STYLES*/
+
+
+        .container {
+            text-align: center; 
+        }
+
+        .container img {
+            display: inline-block; 
+            max-width: 30%; 
+            height: auto; 
+            margin: 0 10px; 
+        }
+
+
+
+        button {
+            margin-bottom: 10px;
+            background-color: #272727;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            position: fixed;
+            bottom: 100px;
+            left: 80%;
+            opacity: 15%;
+
+        } 
+
+
+        button:hover {
+            background-color: #494949;
+            opacity: 70%;
+        }
+
+        button:active {
             background-color: #6b6b6b;
         }
 
 
-a {
-    font-size: 72px;
-    font-family: comic, sans-serif;
-}
 
-a1 {
-    font-size: 30px;
-    font-family: comic, sans-serif;
-    padding-top: 30px;
-}
-        
-</style>
-
-
-<a>Project 1</a>
-<div> <a1>Coming Soon</a1> </div>
-<div>
-
-<a href="projects.html">
-        <button class="linkedin">Back to site</button>
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Frederick Davis</h1>
+    </header>
     </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h2>HotHere, Event Finder App</h2>
+
+        <div
+        class="description"></p>Human Computer Interaction, User-Centered Design, UX/UI Design</p>
+        </div>
+
+        <div
+        class="content"></p>Focusing on Human Computer Interaction, 
+                            this application connects users with events and venues that 
+                            perfectly align with their unique style.</p>
+        </div>
+        
+        <div class="container">
+            <img src="HCI1.png" alt="Image 1">
+            <img src="HCI2.png" alt="Image 2">
+            <img src="HCI3.png" alt="Image 3">
+        </div>
+
+        <div
+        class="subtitle"></p>Development Process</p>
+        </div>
+
+
+
+        <div class="contentbox">
+            <div class="contentbox-inner">
+            <img src="process.png" alt="Your Image">
+            <div class="text-container">
+                <p>Market Research</p>
+                <p>User Interviews</p>
+                <p>User Stories</p>
+                <div
+                class="description"></p>Through this process, I gained valuable insights 
+                                        into the essential features users desire, 
+                                        enabling me to streamline the application for 
+                                        an intuitive and user-friendly experience.</p>
+                </div>
+        </div>
+            </div>
+
+
+            <div class="contentbox">
+                <div class="contentbox-inner">
+                    <div class="text-container">
+                        <p>Low-fidelity Prototyping</p>
+                        <p>Task FLows</p>
+                        <p>Wire Flows & Frames</p>
+                        <div
+                        class="description"></p>Building on these insights, I can optimize the 
+                                                user experience and craft the user journey to 
+                                                ensure a seamless and enjoyable navigation through 
+                                                the app and its features.</p>
+                                                <p>My goal was to create an app that strikes a 
+                                                    balance, offering simplicity for first-time 
+                                                    users while providing robust functionality 
+                                                    for those eager to explore its features in depth.
+                                                </p>
+                                                <p>The UX design incorporates multiple routes 
+                                                    allowing for flexibility while ensuring ease 
+                                                    of return to previous states. This approach 
+                                                    minimizes the impact of user errors, providing 
+                                                    a forgiving and intuitive experience.
+                                                </p>
+                        </div>
+                </div>
+                <img src="ux.png" alt="Your Image">
+                </div>
+
+
+        
+        <div class="contentbox">
+            <div class="contentbox-inner">
+            <img src="flow.png" alt="Your Image">
+            <div class="text-container">
+                <p>Digital Prototyping (Figma)</p>
+                <p>UI Design</p>
+                <p>Graphic Design</p>
+                <div
+                class="description"></p>With my User Flows as a foundation, I developed 
+                                        a digital prototype, expanding on the visual aspects 
+                                        of the user interface to ensure a compelling and engaging 
+                                        user experience.</p>
+                                        <p>The design integrates vibrant, saturated colours 
+                                            and expressive iconography, harmonizing them with 
+                                            softer-coloured, distinct menus. This intentional 
+                                            blend strikes a balance, making the app visually 
+                                            appealing and approachable for a diverse audience, 
+                                            from jazz loungers to bar-hoppers.
+                                        </p>
+                </div>
+        </div>
+            </div>
+
+    </section>
+    <div class="container">
+        <img src="hothere.png" alt="Image 1">
+    </div>
+
+
+
+
+
+
+    
+
+    <button onclick="scrollToTop()" id="scrollBtn" title="Go to top">Back to top</button>
+
+    <script>
+
+        function scrollToTop() {
+
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    
+
+        window.onscroll = function() {scrollFunction()};
+    
+        function scrollFunction() {
+            var scrollBtn = document.getElementById("scrollBtn");
+
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollBtn.style.display = "block";
+            } else {
+
+                scrollBtn.style.display = "none";
+            }
+        }
+    </script>
+
+
+</body>
+</html>
